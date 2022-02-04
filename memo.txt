@@ -1,0 +1,11 @@
+pip freeze > requirements.txt
+pip install -r requirements.txt
+
+flask db init
+flask db migrate
+flask db upgrade
+flask run
+flask run --debugger --reload
+
+flake8 --exclude "venv,migrations" --show-source --extend-select Q00 --ignore=E501
+autopep8 -ivr . --exclude="venv,migrations" --aggressive --aggressive

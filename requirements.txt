@@ -1,0 +1,9 @@
+Flask
+Flask-Migrate
+flask-restx
+Flask-SQLAlchemy
+mysqlclient
+flake8
+flake8-quotes
+autopep8
+pytest
